@@ -1,0 +1,39 @@
+POST http://localhost:8080/api/signup
+Content-Type: application/json
+
+{
+    "name": "Imraan",
+    "email": "imraan.meyer97@gmail.com",
+    "password": "imower12"
+}   
+
+###
+
+POST http://localhost:8080/api/signin
+Content-Type: application/json
+
+{
+    "email": "imraan.meyer97@gmail.com",
+    "password": "imower12"
+}
+
+###
+
+GET http://localhost:8080/api/todos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWU3OWMzZDE0ZjJmODFiNGNjMWU0MzYiLCJpYXQiOjE1OTIyMzcxMTgsImV4cCI6MTU5Mjg0MTkxOH0.j2XhjevrhnbX5wOG3DVfiFXgmRcs6Ua5J_HS7gnI7MY
+
+###
+
+POST http://localhost:8080/api/todos/new
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWU3OWMzZDE0ZjJmODFiNGNjMWU0MzYiLCJpYXQiOjE1OTIyMzcxMTgsImV4cCI6MTU5Mjg0MTkxOH0.j2XhjevrhnbX5wOG3DVfiFXgmRcs6Ua5J_HS7gnI7MY
+
+
+{
+    "todo": "This is another one here"
+}
+
+###
+
+DELETE http://localhost:8080/api/todos/5ee79d6e15951d379cf58695
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWU3OWMzZDE0ZjJmODFiNGNjMWU0MzYiLCJpYXQiOjE1OTIyMzcxMTgsImV4cCI6MTU5Mjg0MTkxOH0.j2XhjevrhnbX5wOG3DVfiFXgmRcs6Ua5J_HS7gnI7MY

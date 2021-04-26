@@ -16,7 +16,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "bootstrap": "^4.5.0",
-    "concurrently": "^5.2.0",
+    "concurrently": "^6.0.0",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "dotenv": "^8.2.0",
